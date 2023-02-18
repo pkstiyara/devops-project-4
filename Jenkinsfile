@@ -5,7 +5,7 @@ pipeline {
         stage('Cloning Source Code from Github') {
             steps {
                 echo 'Cloning source code from Github'
-                // Add git checkout command here to clone the repository
+                bat "git clone https://github.com/pkstiyara/devops-project-4.git"
             }
         }
     }
